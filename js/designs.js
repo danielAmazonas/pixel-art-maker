@@ -33,3 +33,7 @@ $('#sizePicker').submit(function() {
 document.getElementById('colorPicker').addEventListener('input', function() {
     cor = $(this).val();
 }, false);
+
+$('#pixelCanvas').on('click', function(e) {
+    $(e.target).css('background-color', cor);
+});
