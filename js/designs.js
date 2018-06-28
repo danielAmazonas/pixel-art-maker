@@ -5,6 +5,7 @@
 
 let alturaGrid = $('#inputHeight').val();
 let larguraGrid = $('#inputWeight').val();
+let cor;
 
 function makeGrid() {
     $('#pixelCanvas').children().remove('tr');
@@ -27,4 +28,8 @@ $('#inputWeight').focusout(function() {
 $('#sizePicker').submit(function() {
     makeGrid();
     return false;
+});
+
+$('#colorPicker').on('click', function(e) {
+    cor = $('#colorPicker').val();
 });
